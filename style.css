@@ -14,6 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
 }
 
 .container {
@@ -66,4 +67,47 @@ p {
     background-color: black;
     z-index: 2;
     border: none;
+}
+
+@media (max-width: 425px) {
+    body {
+        width: 100%;
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+
+    .container {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .seconds {
+        width: 120px;
+        background-color: red !important;
+        margin-left: -15px;
+    }
+
+    .minutes {
+        width: 105px;
+        margin-left: -00.5px;
+        transform-origin: 80.5%;
+    }
+    .red-dot {
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+    .hours {
+        width: 95px;
+        margin-left:8px;
+        transform-origin: 80.5%;
+    }
+}
+
+@media (max-width:280px) {
+    body {
+        width: 100%;
+        max-width: fit-content;
+        margin: 0 auto;
+        padding: 1rem;
+    }
 }
